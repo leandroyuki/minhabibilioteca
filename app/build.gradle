@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 apply plugin: 'kotlin-android'
 
@@ -13,7 +13,6 @@ group='com.github.leandroyuki'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "br.com.leandrotakahashi.minhabibilioteca"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
@@ -36,4 +35,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.github.leandroyuki:minhabibilioteca:v1.0'
 }
